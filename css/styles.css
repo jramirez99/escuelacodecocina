@@ -1,0 +1,166 @@
+:root {
+    --primario: #f46669;
+    --secundario: #c7c57d;
+    --gris: #f5f5f5;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Lato', sans-serif;
+    font-family: 'Vesper Libre', serif; */
+    color:#303030;
+}
+
+
+/* separator: icono de la (x) */
+.separator::after {
+    content: "";
+    background-image: url(../img/separador.png);
+    display: block;
+    width: 300px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 2rem auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+/* navigation */
+nav .nav-link {
+    color: black;
+    font-size: 1.3rem;
+}
+nav .nav-link:hover {
+    background-color: var(--secundario);
+    transition: all .4s ease-in-out;
+    border-radius: 7px;
+}
+
+/* images-principals */
+.bg-vino {
+    background-image: url(../img/principal1.jpg);
+}
+.bg-comida {
+    background-image: url(../img/principal2.jpg);
+}
+.top-image > div, .down-image > div {
+    height: 30rem;
+}
+@media (min-width:768px) {
+    .top-image > div, .down-image > div {
+        height: 38rem;
+    }
+}
+.down-image .bg-comida{
+    order: 1;
+}
+@media (min-width:768px) {
+    .down-image .bg-comida {
+        order: -1;
+    }
+}
+.top-image .bg-primary {
+    background-color: var(--primario)!important;
+}
+.down-image .bg-primary {
+    background-color: var(--secundario)!important;
+}
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.top-image .content {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.down-image .content {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.images-principals h3 {
+    font-size: 3rem;
+}
+.images-principals p {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+}
+
+
+/* we */ 
+.we .row h3 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+.we .row p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: rgb(104, 104, 104);
+}
+
+/* class (cards) */
+.class {
+    background-color: rgb(243, 243, 243);
+}
+.class .card {
+    margin: 0 0 2rem 0;
+}
+.class .card-date {
+    background-color: var(--primario)!important;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.class .card-date span {
+    background-color: var(--secundario)!important;
+    color: black;
+    font-size: 1rem;
+}
+.class .card-body p {
+    line-height: 2rem;
+}
+.class .card-body h3 {
+    font-weight: 400;
+    font-size: 1.9rem;
+}
+.class .card-body .subtitle, a {
+    color: var(--primario);
+    font-size: 1.3rem;
+}
+
+
+/* bacherlosdegrees */ 
+.bacherlosdegrees {
+    background-image: url(../img/chef_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bacherlosdegrees .row {
+    height: 38rem;
+}
+.bacherlosdegrees h3 {
+    font-weight: 900;
+    font-size: 3.3rem;
+}
+.bacherlosdegrees p {
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+.bacherlosdegrees .btn-primary {
+    background-color: var(--primario)!important;
+    border: 1px solid var(--primario)!important;
+    padding: .8rem 2rem;
+    font-size: 1.3rem;
+}
+
+
+/* footer */
+.footer {
+    border-bottom: 10px solid var(--primario);
+}
+.copyright {
+    font-weight: 700;
+    font-size: 1rem;
+}
